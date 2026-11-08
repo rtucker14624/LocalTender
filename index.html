@@ -4,7 +4,32 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>LocalTender | Google Business Profile Management for Home Service Businesses</title>
-<meta name="description" content="We set up, optimize, and run your Google Business Profile so customers find you instead of your competitors. $200/month, no contract.">
+<meta name="description" content="We set up, optimize, and run your Google Business Profile, plus Bing and Apple Maps, so customers and AI assistants find you first. $200/month, no contract.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "name": "LocalTender",
+      "url": "https://rtucker14624.github.io/LocalTender/",
+      "description": "Google Business Profile management for local home service businesses, including Bing Places and Apple Maps setup, review management, and regular posts and photos.",
+      "priceRange": "$200/month",
+      "parentOrganization": { "@type": "Organization", "name": "Visual Expressions LLC" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What does LocalTender do?", "acceptedAnswer": { "@type": "Answer", "text": "We set up, optimize, and run your Google Business Profile: fixing or creating the profile, requesting reviews after jobs, replying to every review, and posting photos and updates on a steady schedule." } },
+        { "@type": "Question", "name": "Does this help me show up in ChatGPT or Google's AI answers?", "acceptedAnswer": { "@type": "Answer", "text": "AI search tools lean on the same signals as local search: a complete, accurate profile, consistent business details across directories, and recent, detailed reviews. We build those signals. No one can guarantee placement in AI answers, but a strong, consistent local presence gives you the best chance." } },
+        { "@type": "Question", "name": "Do you handle Bing and Apple Maps too?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We set up and keep your Bing Places and Apple Maps listings accurate alongside your Google profile, since AI assistants pull from those sources too." } },
+        { "@type": "Question", "name": "How much does it cost, and is there a contract?", "acceptedAnswer": { "@type": "Answer", "text": "$200 per month with no contract. Cancel anytime." } },
+        { "@type": "Question", "name": "What kinds of businesses do you work with?", "acceptedAnswer": { "@type": "Answer", "text": "Local home service businesses such as landscaping, lawn care, snow removal, plumbing, and electrical." } }
+      ]
+    }
+  ]
+}
+</script>
 <style>
   :root { --green:#1f6f4a; --dark:#16251e; --light:#f4f8f5; --text:#26332c; }
   * { box-sizing:border-box; }
@@ -35,6 +60,12 @@
   .price li:before { content:"\2713"; position:absolute; left:0; color:var(--green); font-weight:700; }
   form { max-width:520px; margin:0 auto; display:grid; gap:12px; }
   input, textarea { width:100%; padding:12px; border:1px solid #c5d4cb; border-radius:8px; font:inherit; }
+  .checks { list-style:none; padding:0; margin:0 auto; max-width:720px; }
+  .checks li { padding:8px 0 8px 28px; position:relative; }
+  .checks li:before { content:"\2713"; position:absolute; left:0; color:var(--green); font-weight:700; }
+  .faq { max-width:720px; margin:0 auto; }
+  .faq h3 { margin:24px 0 6px; color:var(--green); font-size:1.1rem; }
+  .faq p { margin:0; }
   .ps { max-width:640px; margin:30px auto 0; font-style:italic; text-align:center; font-size:.95rem; }
   footer { background:var(--dark); color:#b9c9c0; text-align:center; padding:24px 0; font-size:.9rem; }
   @media (max-width:600px){ .hero h1{font-size:1.8rem;} }
@@ -62,7 +93,7 @@
     <h2>Built for local home service businesses</h2>
     <p class="sub">Landscaping, lawn care, snow removal, plumbing, electrical, and more. You're busy doing the work. We keep your online presence working while you do.</p>
     <div class="grid">
-      <div class="card"><h3>Find &amp; fix your profile</h3><p>No profile? We create one. Neglected profile? We claim it, complete it, and optimize it.</p></div>
+      <div class="card"><h3>Find &amp; fix your profile</h3><p>No profile? We create one. Neglected profile? We claim it, complete it, and optimize it. We also set up Bing Places and Apple Maps to match.</p></div>
       <div class="card"><h3>More reviews</h3><p>Automatic review requests go out after your jobs are done, so happy customers actually leave feedback.</p></div>
       <div class="card"><h3>Reviews answered</h3><p>Every review gets a prompt, professional reply. Customers notice, and so does Google.</p></div>
       <div class="card"><h3>Regular posts &amp; photos</h3><p>Fresh posts and job photos on a steady schedule keep your profile active and ranking.</p></div>
@@ -70,7 +101,21 @@
   </div>
 </section>
 
-<section class="alt">
+<section id="ai-search" class="alt">
+  <div class="wrap">
+    <h2>Search has changed. Your profile has to keep up.</h2>
+    <p class="sub">People now ask Google, Maps, Siri, and AI assistants like ChatGPT who to call. These tools favor businesses with complete, consistent, recently reviewed profiles. We build exactly that.</p>
+    <ul class="checks">
+      <li><strong>Reviews that mention the neighborhood and the job.</strong> Our review requests nudge customers to say where you worked and what you did, which gives search and AI tools real local context.</li>
+      <li><strong>Geotagged job photos.</strong> Every photo we post carries your service-area location. Google can read that location data, which helps show the areas you serve.</li>
+      <li><strong>Beyond Google.</strong> We set up Bing Places and Apple Maps so you're found wherever people (and AI assistants) look.</li>
+      <li><strong>One consistent listing everywhere.</strong> Same name, address, and phone across the directories that matter.</li>
+      <li><strong>Always fresh.</strong> Regular posts, photos, and new reviews keep your profile active.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
   <div class="wrap price">
     <h2>Simple pricing</h2>
     <div class="amt">$200<span style="font-size:1.1rem;font-weight:500;color:var(--text)"> / month</span></div>
@@ -82,6 +127,24 @@
       <li>No contract. Cancel anytime.</li>
     </ul>
     <a class="btn" href="#contact">Start with a free audit</a>
+  </div>
+</section>
+
+<section id="faq" class="alt">
+  <div class="wrap">
+    <h2>Common questions</h2>
+    <div class="faq">
+      <h3>What does LocalTender do?</h3>
+      <p>We set up, optimize, and run your Google Business Profile: fixing or creating the profile, requesting reviews after jobs, replying to every review, and posting photos and updates on a steady schedule.</p>
+      <h3>Does this help me show up in ChatGPT or Google's AI answers?</h3>
+      <p>AI search tools lean on the same signals as local search: a complete, accurate profile, consistent business details across directories, and recent, detailed reviews. We build those signals. No one can guarantee placement in AI answers, but a strong, consistent local presence gives you the best chance.</p>
+      <h3>Do you handle Bing and Apple Maps too?</h3>
+      <p>Yes. We set up and keep your Bing Places and Apple Maps listings accurate alongside your Google profile, since AI assistants pull from those sources too.</p>
+      <h3>How much does it cost, and is there a contract?</h3>
+      <p>$200 per month with no contract. Cancel anytime.</p>
+      <h3>What kinds of businesses do you work with?</h3>
+      <p>Local home service businesses such as landscaping, lawn care, snow removal, plumbing, and electrical.</p>
+    </div>
   </div>
 </section>
 
